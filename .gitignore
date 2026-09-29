@@ -1,7 +1,8 @@
-errors.txt
-run.sh
+*.exe
 test.cpp
-test.exe
+run.sh
+build.sh
+est.exe
 *.exe
 e
 *.sln.docstates
