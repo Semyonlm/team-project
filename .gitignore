@@ -1,8 +1,9 @@
-[200~
-.vs/
-*.user
-*.suo
-*.userosscache
+errors.txt
+run.sh
+test.cpp
+test.exe
+*.exe
+e
 *.sln.docstates
 
 [Bb]in/
