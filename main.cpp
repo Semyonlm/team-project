@@ -1,17 +1,20 @@
 #include <iostream>
-using namespace std;
 #include "developer.h"
+#include "techlead.h"
+using namespace std;
 int main() {
     int choice;
     do {
         cout << "\nКомандный проект: сборник расчётов\n";
+        cout << "3. Центростремительное ускорение\n";
+        cout << "4. Центростремительная сила\n";
         cout << "1. Площадь треугольника\n";
         cout << "2. Периметр треугольника\n";
         cout << "0. Выход\n";
         cout << "Выберите пункт: ";
         cin >> choice;
         switch (choice) {
- case 1: {
+ 	    case 1: {
                 double a, h;
                 cout << "Введите a и h: ";
                 cin >> a >> h;
@@ -23,6 +26,20 @@ int main() {
                 cout << "Введите a, b, c: ";
                 cin >> a >> b >> c;
                 cout << "Периметр = " << trianglePerimeter(a, b, c) << "\n";
+                break;
+            }
+            case 3: {
+                double v, r;
+                cout << "Введите v и r: ";
+                cin >> v >> r;
+                cout << "Ускорение = " << centripetalAccel(v, r) << "\n";
+                break;
+            }
+            case 4: {
+                double m, v, r;
+                cout << "Введите m, v, r: ";
+                cin >> m >> v >> r;
+                cout << "Сила = " << centripetalForce(m, v, r) << "\n";
                 break;
             }
             case 0:
